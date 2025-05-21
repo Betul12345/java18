@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Betül online store </title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="img/icon.png">
+
+
+ 
+</head>
+<body>
+
+
+    <div class="cart">
+        <div class="top-cart">
+            <h3>Cart İtems: <span class="count-items-cart"> 0 </span></h3>
+            <span onclick="OpenCloseCart()" class="close-cart"><i class="fa-regular fa-circle-xmark"></i></span>
+        </div>
+
+
+        <div class="items-in-cart" id="cart-items">
+
+
+        </div>
+
+        <div class="bottom-cart">
+            <div class="total">
+                <p>Sub Total</p>
+                <p class="price-cart-total">$0</p>
+            </div>
+
+            <div class="button-cart">
+                <a href="#" class="btn-cart btn"> Cheackout</a>
+                <span onclick="OpenCloseCart()"  class="btn-cart tran-bg btn"> Shop More</span>
+            </div>
+        </div>
+    </div>
+
+
+<header>
+        <div class="top_header">
+            <div class="container">
+
+                <a href="#" class="logo"> <img src="img/logo.png" alt="logo"></a>
+                <form action="" class="search-box">
+                    
+                    <div class="select-box">
+                    <select id="category" name="category">
+                        <option value="All categories "> All categories </option>
+                        <option value="Electronics & Digita "> Electronics & Digita </option>
+                        <option value="Phones & Tablety  "> Phones & Tablety  </option>
+                        <option value="Fashion & Clothings "> Fashion & Clothings  </option>
+                        <option value="Telivsion & Monitor "> Telivsion & Monitor  </option>
+                        <option value="Jewelry & Watches "> Jewelry & Watches </option>
+                        <option value="Washing Machine  "> Washing Machine   </option>
+                        <option value="Toys & Hobbies  "> Toys & Hobbies  </option>
+    
+                     </select>
+                    </div>
+
+                    <input type="text" name="search" id="search" placeholder="search for products" required >
+                    <button type="submit"> <i class="fa-solid fa-magnifying-glass"></i> </button>
+
+                </form>
+
+                <div class="header-icons">
+                    <div class="icon">
+                        <a href=""> <i class="fa-regular fa-heart"></i>
+                        <span class="count count-favourite">0</span></a>
+                    </div>
+                    <div class="icon" onclick="OpenCloseCart()" > 
+                        <a href="#"> <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="count count-item-header">0</span></a>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <div class="bottom-header">
+            <div class="container">
+                <nav class="nav">
+                    <div class="category-nav">
+                        <div onclick="OpenCateList()" class="category-btn">
+                            <i class="fa-solid fa-bars"></i>
+                            <p>Browse category</p>
+                            <i class="fa-solid fa-angle-down"></i>
+
+                        </div>
+                        <div class="category-nav-list">
+                            <a href="#">Top 10 offers </a>
+                            <a href="#"> Electronics & Digita </a>
+                            <a href="#"> Phones & Tablety </a>
+                            <a href="#"> Fashion & Clothings </a>
+                            <a href="#"> Telivsion & Monitor </a>
+                            <a href="#"> Jewelry & Watches </a>
+                            <a href="#"> Washing Machine </a>
+                            <a href="#"> Toys & Hobbies </a>
+                        </div>
+                    </div>
+                    <ul class="nav-links">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Accesories</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+
+                    </ul>
+                </nav>
+                <div class="login-signup btns">
+                    <a href="#" class="btn">Login <i class="fa-solid fa-right-to-bracket"></i></a>
+                    <a href="#" class="btn">Sign up <i class="fa-solid fa-user-plus"></i> </a>
+
+                </div>
+            </div>
+        </div>
+</header>
+
+<section class="Cheackout">
+    <form action="">
+        <div class="container">
+            <div class="order-summary">
+                <h1>order summary</h1>
+                <div class="items">
+                    <div class="item-cart">
+                        <div class="image-name">
+                            <img src="img/product/10.png" alt="">
+                            <div class="content">
+                                <h4>Lorem ipsum dolor sit amet.</h4>
+                                <p class="price-cart">$25</p>
+                                <div class="quantitiy-control">
+                                    <button class="decrease-quantity">-</button>
+                                    <span class="quantity"> </span>
+                                    <button class="increase-quantity">+</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="delete-item">
+                            <i class="fa-slid fa-trash-can"></i>
+                        </button>
+                    </div>
+
+                    <div class="item-cart">
+                        <div class="image-name">
+                            <img src="img/product/10.png" alt="">
+                            <div class="content">
+                                <h4>Lorem ipsum dolor sit amet.</h4>
+                                <p class="price-cart">$25</p>
+                                <div class="quantitiy-control">
+                                    <button class="decrease-quantity">-</button>
+                                    <span class="quantity"> </span>
+                                    <button class="increase-quantity">+</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="delete-item">
+                            <i class="fa-slid fa-trash-can"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="imput-info"></div>
+        </div>
+    </form>
+
+</section>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="big-row">
+                <img src="img/logo.png" alt="" class="logo-footer">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, eligendi </p>
+                <div class="icons-footer">
+                    <a href="#"> <i class="fa-solid fa-phone">      </i> </a>
+                    <a href="#"> <i class="fa-brands fa-facebook-f"></i> </a>
+                    <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
+                    <a href="#"> <i class="fa-brands fa-x-twitter"></i> </a>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <h4> Find it fast </h4>
+                <div class="links">
+                    <a href="#"> <i class="fa-solid fa-caret-right"></i> Laptops & computers </a>
+                    <a href="#"> <i class="fa-solid fa-caret-right"></i> Smart phones & Tablets </a>
+                    <a href="#"> <i class="fa-solid fa-caret-right"></i> Tv & audio </a>
+                    <a href="#"> <i class="fa-solid fa-caret-right"></i> Appliances  </a>
+                    <a href="#"> <i class="fa-solid fa-caret-right"></i> Jewelry & Watches </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <h4> Quick Links </h4>
+                <div class="links">
+                    <a href="#"> <i class="fa-solid fa-caret-right"></i> Laptops & computers </a>
+                    <a href="#"> <i class="fa-solid fa-caret-right"></i> Smart phones & Tablets </a>
+                    <a href="#"> <i class="fa-solid fa-caret-right"></i> Tv & audio </a>
+                    <a href="#"> <i class="fa-solid fa-caret-right"></i> Appliances  </a>
+                    <a href="#"> <i class="fa-solid fa-caret-right"></i> Jewelry & Watches </a>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <h4> Service us </h4>
+                <div class="links">
+                    <a href="#"> <i class="fa-solid fa-caret-right"></i> Laptops & computers </a>
+                    <a href="#"> <i class="fa-solid fa-caret-right"></i> Smart phones & Tablets </a>
+                    <a href="#"> <i class="fa-solid fa-caret-right"></i> Tv & audio </a>
+                    <a href="#"> <i class="fa-solid fa-caret-right"></i> Appliances  </a>
+                    <a href="#"> <i class="fa-solid fa-caret-right"></i> Jewelry & Watches </a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="bottom-footer">
+            <div class="container">
+                <p>&copy; <span> betül zeytun store</span> All Rights Reserved</p>
+                <div class="payment-img">
+                    <img src="img/payment_method.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="js/main.js"></script>
+
+
+
+</body>
+</html>
